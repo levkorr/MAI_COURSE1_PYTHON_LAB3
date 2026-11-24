@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medialib"
+version = "0.10.1"
+description = "Python package with a CLI for storing media"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Leo Korolyov", email = "lev@fossko.ru"}]
+
+[project.urls]
+Homepage = "https://github.com/levkorr/MAI_COURSE1_PYTHON_LAB3"
+Issues = "https://github.com/levkorr/MAI_COURSE1_PYTHON_LAB3/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+    "ruff==0.16.8"
+]
